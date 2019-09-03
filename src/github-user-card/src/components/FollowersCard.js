@@ -2,7 +2,7 @@ import React from 'react';
 
 function FollowersCard({ follow }) {
   return (
-    <div className="flex">
+    <div>
       <div className="card">
         <div className="card-image waves-effect waves-block waves-light">
           <img
