@@ -17,17 +17,6 @@ class App extends React.Component {
     });
   }
 
-  componentDidUpdate(prevState) {
-    // Typical usage (don't forget to compare props):
-    if (this.state.followers === prevState.followers) {
-      axios
-        .get('https://api.github.com/users/codenamerockey/followers')
-        .then(res => {
-          this.setState({ followers: res.data });
-        });
-    }
-  }
-
   // componentDidUpdate(prevProps, prevState) {
   //   if (this.state.doggos !== prevState.doggos) {
   //     if (this.state.doggoText === 'chihuahua') {
@@ -42,7 +31,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <User githubUser={this.state.user} />
-        <Followers githubFollowers={this.state.followers} />
+        <Followers />
       </div>
     );
   }
