@@ -2,8 +2,8 @@ import React from 'react';
 
 function FollowersCard({ follow }) {
   return (
-    <div>
-      <div className="card" style={{ width: 300 }}>
+    <div className="flex">
+      <div className="card">
         <div className="card-image waves-effect waves-block waves-light">
           <img
             className="activator"

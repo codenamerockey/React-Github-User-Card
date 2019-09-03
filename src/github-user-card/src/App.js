@@ -31,6 +31,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <User githubUser={this.state.user} />
+        <h4>Followers</h4>
         <Followers />
       </div>
     );

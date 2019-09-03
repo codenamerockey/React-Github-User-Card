@@ -15,11 +15,10 @@ const Followers = () => {
   }, []);
 
   return (
-    <div>
+    <div className="flex">
       {followers.map(follower => {
         return (
           <div>
-            <h4>Followers</h4>
             <FollowersCard key={follower.login} follow={follower} />;
           </div>
         );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const User = ({ githubUser }) => {
   return (
-    <div className="card" style={{ width: 300 }}>
+    <div className="card">
       <div className="card-image waves-effect waves-block waves-light">
         <img
           className="activator"
